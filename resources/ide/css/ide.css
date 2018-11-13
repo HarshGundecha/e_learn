@@ -1,0 +1,108 @@
+:root {
+  --main-border-colour: #ddd;
+  --primary-background-colour: #f8f8f8;
+  --secondary-background-colour: #ececec;
+  --primary-brand-colour: #333333;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--primary-background-colour);
+  font-family: 'Exo 2', sans-serif;
+}
+
+.navbar-default {
+  background-color: var(--primary-brand-colour);
+  border-bottom: 1px solid var(--main-border-colour);
+}
+
+.navbar-default .navbar-brand {
+  color: #ddd;
+  padding: 12px 15px 12px 15px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
+
+.CodeMirror {
+  background-color: var(--primary-background-colour);
+  min-height: 100%;
+}
+
+.CodeMirror-gutters {
+  background-color: var(--secondary-background-colour);
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+#sourceEditor {
+  border-bottom: 1px solid var(--main-border-colour);
+  min-height: 400px;
+  height: 60%;
+}
+
+#selectLanguageBtn {
+  max-width: 330px;
+}
+
+#inputLabel {
+  border-right: 1px solid var(--main-border-colour);
+}
+
+#inputEditor, #outputEditor {
+  min-height: 300px;
+  height: 40%;
+}
+
+#inputEditor {
+  border-right: 1px solid var(--main-border-colour);
+  padding-left: 0px;
+}
+
+#runBtn {
+  width: 100px;
+}
+
+#saveBtn {
+  width: 130px;
+}
+
+#statusLine {
+  margin-right: 10px;
+}
+
+#footer {
+  background-color: var(--primary-brand-colour);
+  border-top: 1px solid var(--main-border-colour);
+  padding-top: 40px;
+  text-align: center;
+  min-height: 100px;
+  color: #777;
+}
+
+#footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ddd;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+.vertical-spacer {
+  display: inline-block;
+  background-color: var(--main-border-colour);
+  margin: 0px 10px -14px 10px;
+  width: 1px;
+  height: 34px;
+}

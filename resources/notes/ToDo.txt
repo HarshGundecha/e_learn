@@ -1,0 +1,75 @@
+=>Add prefix 'User' in fields of tblusernotification in database
+=>update field names in code at
+	->adding notification on discussion's answer
+	->adding notification on challenge send,receive,finished
+	->displaying notofication in top_script
+
+accept answer on user side
+
+
+block user from replaying completed challlenge
+on article comment send email to admin and set notifications on admin
+on discussion answer send email to user and set notifications on user
+article mobile view banner
+article mobile movie
+change category to courses in top bar
+description on course hover
+challenge hover design improvement
+
+
+1() for showing courses
+1($CourseID) for showing users after above
+1($CourseID,$ReceiverID) for handling questions(inert into challenge here)
+
+Class Challenge
+{
+	p f index() 							 //show history
+	p f new() 								 //show courses
+	p f users($cid) 					 //show users 
+	p f start($cid,$uid)			 //
+	p f play($AnswerID=false)	 //try using user session so dont use arguements here
+														 //	select * from challenge where senderid=session order by desc
+														 // dont allow going back to previous question
+														 // in play() count already asked questions to limit questions to 5
+														 // when 5 questions are asked show message for waiting for opponent and a button to challenge history i.e., index()
+	p f 
+}
+
+new challenge -> new()
+select course -> users($cid)
+select user -> start($cid,$uid) -> redirect-> play()
+
+
+==>todo
+
+	=>code
+		->check query return status for all query types instead of assuming all went well
+		->check for modification to arguements(
+			what if random ids or text are passed
+		)
+		->set validation in add and update form
+		->null variables before use
+
+	=>design
+		->autofocus default and first fields
+		->reset add and update forms after submission
+		->remove text-muted class from all like, comment icons
+		->tooltips on all likes and unify design of it
+
+==>feature list
+	=>advanced
+		->face login
+		->video chat
+		->google login
+		->auto address fill
+		->compilers
+	=>basic
+		->nested comments
+		->mentioning system
+		->notifications
+		->reports
+		->follow/unfollow
+		->tags management
+		->search with tag
+
+

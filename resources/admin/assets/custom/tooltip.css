@@ -1,0 +1,21 @@
+.tooltip_custom {
+		position: relative;
+		display: inline-block;
+}
+
+.tooltip_custom .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		border-radius: 6px;
+		padding: 5px 10px 5px 10px;
+		
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+}
+
+.tooltip_custom:hover .tooltiptext {
+		visibility: visible;
+}
