@@ -56,7 +56,7 @@ sharing on Whatsapp, Facebook etc
 - Open apache's php.ini and set the value of `upload_max_filesize` to **4M**, save the file, **start/restart** both apache and mysql server.
 - Open phpmyadmin, create a database with some name like `e_learn`
 - Once DB is created select **e_learn** database from list of DB and go to import tab and import the sql file located at `/resources/db/db.sql` and click go, wait for some time for import to finish.
-- Open `/application/config/config.php` and set the `$config['base_url']` to homepage of the project for example set to 'http://localhost/e_learn/' if you project is inside the directory named `e_learn` and **save the file**.
+- Open `/application/config/config.php` and set the `$config['base_url']` to homepage of the project for example set to http://localhost/e_learn/ if you project is inside the directory named `e_learn` and **save the file**.
 - Open `/application/config/database.php` and set the `hostname`, `username`, `password` and `database` fields and **save the file**.
-- Visit `http://localhost/e_learn` and the user's login/register page should show up, try logging in using the credentials from `tbluser` table in database.
-- Similarly try visiting `http://localhost/e_learn/admin` and the admin's login page should show up, try logging in using the credentials from `tbladmin` table in database.
+- Visit http://localhost/e_learn and the user's login/register page should show up, try logging in using the credentials from `tbluser` table in database.
+- Similarly try visiting http://localhost/e_learn/admin and the admin's login page should show up, try logging in using the credentials from `tbladmin` table in database.
